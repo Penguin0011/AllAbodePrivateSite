@@ -3,6 +3,7 @@
  * axes: light/roman-serif/warm · posture: cinematic · contrast: pass · fold: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: E, the facts list shows "To confirm" until the real figures arrive */
 /* Hallmark · waive 26b · no control on this page can be disabled · it has no form fields and every control is always available */
+/* Hallmark · answered F4 · the owner asked for the walkthrough action as a red (#B40404) filled button beside the call button */
 @import url("./tokens.css");
 @import url("./base.css");
 
@@ -13,6 +14,8 @@
 .btn:active { background: var(--color-ink-2); color: var(--color-paper); }
 .btn.solid { background: var(--color-ink); color: var(--color-paper); }
 .btn.solid:hover { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-accent-ink); }
+.btn.red { background: var(--color-walkthrough); border-color: var(--color-walkthrough); color: var(--color-paper); }
+.btn.red:hover { background: color-mix(in oklab, var(--color-walkthrough) 80%, var(--color-ink)); border-color: color-mix(in oklab, var(--color-walkthrough) 80%, var(--color-ink)); color: var(--color-paper); }
 .btn.small { min-height: 44px; padding: 0 var(--space-md); font-size: var(--text-sm); }
 .link { text-decoration: underline; text-decoration-color: var(--color-accent); text-underline-offset: 0.25em; }
 .link:hover { text-decoration-thickness: 2px; }
