@@ -1,6 +1,6 @@
-/* Hallmark · shape: Cinematic Scroll · genre: editorial · theme: custom (dark, derived from the house: cedar, walnut, dusk glass) · job: visit · draw: custom
+/* Hallmark · shape: Cinematic Scroll · genre: editorial · theme: custom (light and airy, derived from the house: open rooms, daylight, cedar) · job: visit · draw: custom
  * hero: full-bleed crossfade of three interiors · nav: overlay masthead · footer: colophon block · imagery: the client's own photographs · signature: the living room, kitchen and dining view crossfading behind the address
- * axes: dark/roman-serif/warm · posture: cinematic · contrast: pass · fold: pass · v2.0.0 */
+ * axes: light/roman-serif/warm · posture: cinematic · contrast: pass · fold: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: E, the facts list shows "To confirm" until the real figures arrive */
 /* Hallmark · waive 26b · no control on this page can be disabled · it has no form fields and every control is always available */
 @import url("./tokens.css");
@@ -35,7 +35,7 @@
 .hero .slide:nth-child(3) { animation-delay: 14s; }
 @keyframes fade { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
 @keyframes fade-first { 0% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 95% { opacity: 0; } 100% { opacity: 1; } }
-.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to right, color-mix(in oklab, var(--color-paper) 55%, transparent), transparent 60%), linear-gradient(to top, color-mix(in oklab, var(--color-paper) 92%, transparent) 0%, color-mix(in oklab, var(--color-paper) 55%, transparent) 38%, transparent 70%); }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to right, color-mix(in oklab, var(--color-paper) 78%, transparent) 0%, color-mix(in oklab, var(--color-paper) 40%, transparent) 40%, transparent 65%), linear-gradient(to top, color-mix(in oklab, var(--color-paper) 70%, transparent) 0%, transparent 45%); }
 .hero h1 { font-size: clamp(3.25rem, 8vw + 0.5rem, 8.5rem); max-width: 12ch; line-height: 0.98; }
 .hero .lead { margin-top: var(--space-lg); max-width: 40ch; color: var(--color-ink); }
 .hero .actions { margin-top: var(--space-xl); display: flex; gap: var(--space-lg); align-items: center; flex-wrap: wrap; }
@@ -65,7 +65,7 @@ section { padding-block: var(--section-gap-s); }
 .pair.a .frame:last-child img, .pair.b .frame:first-child img { aspect-ratio: 4 / 5; }
 .scene { position: relative; margin: 0 0 var(--section-gap-s); isolation: isolate; }
 .scene img { width: 100%; height: min(88svh, 62vw); min-height: 420px; object-fit: cover; }
-.scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, color-mix(in oklab, var(--color-paper) 85%, transparent), transparent 55%); }
+.scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, color-mix(in oklab, var(--color-paper) 88%, transparent), transparent 50%); }
 .scene figcaption { position: absolute; left: 0; right: 0; bottom: var(--space-2xl); z-index: 1; }
 .scene h2 { font-size: var(--text-display-s); }
 .scene p { margin-top: var(--space-xs); color: var(--color-ink-2); }
